@@ -6,7 +6,7 @@
     <meta name="description" content="Missionary Correlation System">
     <meta name="author" content="Joseph Lee">
 
-    <title>Dashboard - SB Admin</title>
+    <title>@yield('title')</title>
 
     @yield('core-style')
     @yield('page-style')
@@ -110,6 +110,16 @@
         </div><!-- /.navbar-collapse -->
       </nav>
 	
+		<div id="page-wrapper">
+		<div class="col-lg-12">
+            <div class="row">
+            	<h1>
+            		@yield('title')
+            		<small>@yield('title-small')</small>
+            	</h1>
+			</div>
+			
+		</div>
 	</div>
 	
 	@yield('core-footer-js')

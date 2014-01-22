@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', 'DashboardController@getIndex');
 
 Route::get('/users', 'UsersController@getIndex');
 
@@ -24,3 +23,4 @@ Route::get('/home', function(){
 	return View::make('home');
 });
 
+Route::get('/investigator', 'Investigator@getIndex');
