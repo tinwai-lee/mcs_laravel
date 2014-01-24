@@ -23,4 +23,4 @@ Route::get('/home', function(){
 	return View::make('home');
 });
 
-Route::get('/investigator', 'InvestigatorController@getIndex');
+Route::get('/investigator', 'InvestigatorController@getList');

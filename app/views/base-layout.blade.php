@@ -118,6 +118,7 @@
             		<small>@yield('title-small')</small>
             	</h1>
 			</div>
+			@yield('content')
 			
 		</div>
 	</div>

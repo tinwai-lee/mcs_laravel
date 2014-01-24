@@ -1,6 +1,6 @@
 <?php 
-class Investigator extends Eloquent {
-	protected $table="investigators";
+class Investigator extends BaseModel {
+	protected $table="investigator";
 	
 	
 }

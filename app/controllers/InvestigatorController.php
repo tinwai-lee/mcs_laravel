@@ -1,10 +1,11 @@
 <?php 
 class InvestigatorController extends BaseController {
-	public function getIndex(){
-		$investigator = Investigator::find(1);
-		var_dump($investigator);
+	public function getList(){
+		$investigator = new Investigator();
+		var_dump($investigator->getAllColumnsNames());
+		exit();
+		return View::make('investigators');
 		
 	}
-	
 }
 ?>
