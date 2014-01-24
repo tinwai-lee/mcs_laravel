@@ -18,6 +18,7 @@ $rows = $table['data'];
 								?><th class="header"><?php echo $title; ?><i class="fa fa-sort"></i></th><?php
 							}
                       	?>
+                      	<th class="header"> </th>
                         <!-- <th class="header">Order # <i class="fa fa-sort"></i></th>
                         <th class="header">Order Date <i class="fa fa-sort"></i></th>
                         <th class="header">Order Time <i class="fa fa-sort"></i></th>
@@ -31,7 +32,9 @@ $rows = $table['data'];
 								foreach ($row as $field){
 									?><td><?php echo ($field); ?></td><?php 
 								}
-								?></tr><?php 
+								?>
+								<td><i class="fa fa-edit"></i>&nbsp;<i class="fa fa-trash-o"></i></td>
+								</tr><?php 
 							}
                     	?>
                       <!-- <tr>
