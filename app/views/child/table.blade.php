@@ -4,7 +4,7 @@ $rows = $table['data'];
 ?>
 <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-money"></i> <?php echo $table['title'];?></h3>
+                <div class="panel-title"><?php echo $table['title'];?></div>
               </div>
               <div class="panel-body">
                 <div class="table-responsive">

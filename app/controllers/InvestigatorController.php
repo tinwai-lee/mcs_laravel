@@ -1,7 +1,7 @@
 <?php 
 class InvestigatorController extends BaseController {
 	public function getList(){
-		$table = [];
+		$table = array();
 		$investigator = new Investigator();
 		//set table title
 		$table['title'] = 'Investigators';
@@ -11,9 +11,9 @@ class InvestigatorController extends BaseController {
 		//set table data
 		$columns = $investigator->getAllColumns();
 		$investigator = Investigator::all();
-		$table_data = [];
+		$table_data = array();
 		foreach($investigator as $i){
-			$row = [];
+			$row = array();
 			foreach ($columns as $column){
 				$c = $i->lists($column);
 				$row[$column] = $c[0];
@@ -22,7 +22,11 @@ class InvestigatorController extends BaseController {
 		}
 		$table['data'] = $table_data;
 		return View::make('investigators')->nest('child', 'child.table', array('table' => $table));
-		
+	}
+	
+	public function addInvestigator (){
+		$columns = $investigator->getAllColumns();
+		$columns_titles = $investigator->getAllColumnsTitles();
 	}
 }
 ?>

@@ -24,3 +24,4 @@ Route::get('/home', function(){
 });
 
 Route::get('/investigator', 'InvestigatorController@getList');
+Route::get('/investigator/add', 'InvestigatorController@addInvestigator');
