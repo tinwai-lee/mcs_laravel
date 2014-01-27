@@ -32,5 +32,8 @@
 	"config": {
 		"preferred-install": "dist"
 	},
+	"packages":{
+		"atrauzzi/laravel-doctrine": "dev-master"
+	},
 	"minimum-stability": "stable"
 }

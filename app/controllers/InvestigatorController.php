@@ -25,8 +25,13 @@ class InvestigatorController extends BaseController {
 	}
 	
 	public function addInvestigator (){
-		$columns = $investigator->getAllColumns();
-		$columns_titles = $investigator->getAllColumnsTitles();
+		//$columns = $investigator->getAllColumns();
+		//$columns_titles = $investigator->getAllColumnsTitles();
+		$c = DB::getDoctrineConnection();
+		var_dump($c);
+		exit();
+		$m = $c->getColumMeta(0);
+		
 	}
 }
 ?>
